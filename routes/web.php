@@ -19,11 +19,18 @@ Route::get('/verificando', [AuthController::class, 'showVerif']);
 Route::post('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/logout', [AuthController::class, 'logout']);
 
-// Dashboard routes (after login)
+// Dashboard routes (after login) - Note: Add auth middleware when Laravel auth is fully configured
+// For now, routes are accessible but views check session data
 Route::get('/dam/movil', function () {
+    if (!session('idUxer')) {
+        return redirect('/');
+    }
     return view('dam.movil');
 });
 
 Route::get('/dam/desk', function () {
+    if (!session('idUxer')) {
+        return redirect('/');
+    }
     return view('dam.desk');
 });

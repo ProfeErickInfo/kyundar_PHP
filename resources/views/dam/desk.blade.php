@@ -131,6 +131,7 @@
             Bienvenido a la versión de escritorio de Kyundar
         </p>
         
+        @if(session('idUxer'))
         <div class="user-info">
             <h3 class="mb-3">Información de la Sesión</h3>
             <div class="user-info-row">
@@ -159,11 +160,17 @@
                     <span>{{ session('ip_origen', 'N/A') }}</span>
                 </div>
                 <div class="user-info-item">
-                    <strong><i class="fas fa-shield-alt me-2"></i>Token CSRF</strong>
-                    <span>{{ substr(session('token_csrf', 'N/A'), 0, 16) }}...</span>
+                    <strong><i class="fas fa-shield-alt me-2"></i>Sesión Protegida</strong>
+                    <span><i class="fas fa-check-circle text-success"></i> CSRF Activo</span>
                 </div>
             </div>
         </div>
+        @else
+        <div class="alert alert-warning">
+            <i class="fas fa-exclamation-triangle"></i>
+            No hay sesión activa. Por favor inicia sesión.
+        </div>
+        @endif
         
         <div class="alert alert-success">
             <i class="fas fa-check-circle"></i>

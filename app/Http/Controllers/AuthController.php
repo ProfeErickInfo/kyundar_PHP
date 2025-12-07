@@ -52,8 +52,8 @@ class AuthController extends Controller
             ->first();
 
         if (!$user) {
-            // Log failed attempt
-            error_log("Login failed - User: {$nom}, IP: {$ip}");
+            // Log failed attempt - avoid logging full username for security
+            error_log("Login failed - User hash: " . substr(md5($nom), 0, 8) . ", IP: {$ip}");
             return redirect('/log_fail.html');
         }
 
@@ -69,7 +69,8 @@ class AuthController extends Controller
         }
 
         if (!$passwordValid) {
-            error_log("Login failed - Invalid password for user: {$nom}, IP: {$ip}");
+            // Log failed attempt - avoid logging full username for security
+            error_log("Login failed - Invalid password, User hash: " . substr(md5($nom), 0, 8) . ", IP: {$ip}");
             return redirect('/log_fail.html');
         }
 
@@ -79,7 +80,8 @@ class AuthController extends Controller
             ->first();
 
         if (!$organizacion) {
-            error_log("Login failed - Organization not found for user: {$nom}");
+            // Log failed attempt - avoid logging full username for security
+            error_log("Login failed - Organization not found, User hash: " . substr(md5($nom), 0, 8));
             return redirect('/log_fail.html');
         }
 
@@ -97,7 +99,9 @@ class AuthController extends Controller
             'ultimo_acceso' => time(),
             'ip_origen' => $ip,
             'user_agent' => $userAgent,
-            'token_csrf' => bin2hex(random_bytes(32)),
+            // Note: Laravel provides its own CSRF token via csrf_token() helper
+            // This custom token is kept for compatibility with legacy code
+            'token_csrf' => csrf_token(),
         ]);
 
         // Log successful login

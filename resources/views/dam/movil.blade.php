@@ -90,12 +90,19 @@
             Bienvenido a la versión móvil de Kyundar
         </p>
         
+        @if(session('idUxer'))
         <div class="user-info">
             <p><strong>Club:</strong> {{ session('nombre_usu', 'N/A') }}</p>
             <p><strong>Usuario:</strong> #{{ session('idUxer', 'N/A') }}</p>
             <p><strong>Tipo:</strong> {{ session('tipo_U', 'N/A') }}</p>
             <p><strong>Sesión iniciada:</strong> {{ date('d/m/Y H:i', session('inicio_sesion', time())) }}</p>
         </div>
+        @else
+        <div class="alert alert-warning">
+            <i class="fas fa-exclamation-triangle"></i>
+            No hay sesión activa. Por favor inicia sesión.
+        </div>
+        @endif
         
         <div class="alert alert-success">
             <i class="fas fa-check-circle"></i>
