@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <title>Kyundar | Iniciar Sesión</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Inicia sesión en Kyundar - Plataforma integral de gestión administrativa para clubes deportivos y escuelas">
+    <meta name="keywords" content="login, iniciar sesión, Kyundar, gestión administrativa, clubes deportivos">
+    <meta name="author" content="Sikerjapp">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/sj-icono144x144.png">
+    <link rel="apple-touch-icon" href="images/sj-icono144x144.png">
+    
+    <!-- Fuentes modernas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="biblio10/piel.css">
+    
+    <!-- Scripts originales mantenidos para funcionalidad -->
+    <script type="text/javascript" src="biblio10/jquery_notification_v.1.js?v=12346"></script>
+    <link href="biblio10/jquery_notification.css" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="biblio10/jquery_v_1.4.js?v=1234"></script>
+    <script type="text/javascript" src="biblio10/login.js?v=12347"></script>
+    
+</head>
+<body>
+    <!-- Estilos específicos para login -->
+    <style>
+        .login-container {
+            min-height: 100vh;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: 2rem 1rem;
+        }
+        
+        .login-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(245, 158, 11, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.08) 0%, transparent 50%);
+            pointer-events: none;
+        }
+        
+        .login-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-premium);
+            padding: 3rem;
+            width: 100%;
+            max-width: 450px;
+            position: relative;
+            z-index: 2;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .logo-section {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .logo-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            box-shadow: var(--shadow);
+        }
+        
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            color: var(--text-light);
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 2rem;
+        }
+        
+        .form-group {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 1rem 1rem 1rem 3rem;
+            border: 2px solid rgba(30, 64, 175, 0.1);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.8);
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+        
+        .form-input::placeholder {
+            color: var(--text-light);
+        }
+        
+        .input-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+            font-size: 1.1rem;
+            z-index: 1;
+        }
+        
+        .password-toggle {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            z-index: 2;
+        }
+        
+        .password-toggle:hover {
+            color: var(--primary-color);
+        }
+        
+        .login-btn {
+            width: 100%;
+            padding: 1rem;
+            background: var(--gradient-primary);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .login-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: var(--transition);
+        }
+        
+        .login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .login-btn:hover::before {
+            left: 100%;
+        }
+        
+        .login-btn:active {
+            transform: translateY(0);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+        
+        .back-link:hover {
+            color: var(--primary-dark);
+            transform: translateX(-3px);
+        }
+        
+        .browser-info {
+            margin-top: 2rem;
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(30, 64, 175, 0.1);
+        }
+        
+        .browser-text {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .browser-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .browser-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(30, 64, 175, 0.1);
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        
+        .browser-icon:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .login-card {
+                padding: 2rem 1.5rem;
+                margin: 1rem;
+            }
+            
+            .logo-text {
+                font-size: 2rem;
+            }
+            
+            .form-input {
+                padding: 0.9rem 0.9rem 0.9rem 2.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <!-- Enlace de regreso -->
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                <span>Volver al inicio</span>
+            </a>
+            
+            <!-- Logo y título -->
+            <div class="logo-section">
+                <div class="logo-icon">
+                    <i class="fas fa-yin-yang" style="color: white; font-size: 2rem;"></i>
+                </div>
+                <h1 class="logo-text">Kyundar</h1>
+                <p class="subtitle">
+                    Plataforma integral para la gestión digital de clubes deportivos, 
+                    escuelas de artes marciales y centros de formación.
+                </p>
+            </div>
+            
+            <!-- Formulario de login -->
+            <form id="regForm" name="regForm" method="post">
+                <div class="form-group">
+                    <i class="fas fa-user input-icon"></i>
+                    <input 
+                        class="form-input" 
+                        type="text" 
+                        name="txtnusu"
+                        id="txtnusu" 
+                        onKeyPress="return focusNextLogin(this.form, 'txtnusu','txtpass',event);" 
+                        placeholder="Usuario o Email"
+                        required 
+                        autofocus
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <i class="fas fa-lock input-icon"></i>
+                    <input 
+                        class="form-input" 
+                        type="password" 
+                        name="txtpass"
+                        id="txtpass" 
+                        placeholder="Contraseña"
+                        required
+                    >
+                    <i class="fas fa-eye password-toggle" onclick="togglePassword()"></i>
+                </div>
+                
+                <button class="login-btn" type="button" onClick="javascript:entrar();">
+                    <i class="fas fa-sign-in-alt" style="margin-right: 0.5rem;"></i>
+                    Ingresar Ahora
+                </button>
+            </form>
+            
+            <!-- Información de navegadores -->
+            <div class="browser-info">
+                <p class="browser-text">Navegadores recomendados</p>
+                <div class="browser-icons">
+                    <div class="browser-icon" title="Google Chrome">
+                        <i class="fab fa-chrome"></i>
+                    </div>
+                    <div class="browser-icon" title="Mozilla Firefox">
+                        <i class="fab fa-firefox-browser"></i>
+                    </div>
+                    <div class="browser-icon" title="Microsoft Edge">
+                        <i class="fab fa-edge"></i>
+                    </div>
+                    <div class="browser-icon" title="Safari">
+                        <i class="fab fa-safari"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Script para toggle de contraseña -->
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('txtpass');
+            const toggleIcon = document.querySelector('.password-toggle');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleIcon.classList.remove('fa-eye');
+                toggleIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                toggleIcon.classList.remove('fa-eye-slash');
+                toggleIcon.classList.add('fa-eye');
+            }
+        }
+        
+        // Mejorar la experiencia de usuario con animaciones
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginCard = document.querySelector('.login-card');
+            loginCard.style.opacity = '0';
+            loginCard.style.transform = 'translateY(30px)';
+            
+            setTimeout(() => {
+                loginCard.style.transition = 'all 0.6s ease';
+                loginCard.style.opacity = '1';
+                loginCard.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+
+    <!-- Footer oculto para funcionalidad -->
+    <div id="footer" style="display: none;">
+        <div id="carga" style="visibility:hidden; position:relative; float:right;"></div>
+    </div>
+    
+    <!-- Scripts originales mantenidos para funcionalidad -->
+    <script src="biblio10/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="biblio10/vendor/animsition/js/animsition.min.js"></script>
+    <script src="biblio10/vendor/bootstrap/js/popper.js"></script>
+    <script src="biblio10/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="biblio10/vendor/select2/select2.min.js"></script>
+    <script src="biblio10/vendor/daterangepicker/moment.min.js"></script>
+    <script src="biblio10/vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="biblio10/vendor/countdowntime/countdowntime.js"></script>
+    <script src="biblio10/jsx/main.js"></script>
+</body>
+</html>
