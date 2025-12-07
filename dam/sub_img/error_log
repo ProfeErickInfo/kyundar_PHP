@@ -1,0 +1,26 @@
+[26-Oct-2022 22:06:38 UTC] PHP Warning:  move_uploaded_file(uploads/12/16668219226492132394384547115927.jpg): failed to open stream: No such file or directory in /home/erickdev/sistkd.erickdev.net/dam/sub_img/ajaximage.php on line 44
+[26-Oct-2022 22:06:38 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpnkrLvb' to 'uploads/12/16668219226492132394384547115927.jpg' in /home/erickdev/sistkd.erickdev.net/dam/sub_img/ajaximage.php on line 44
+[28-Oct-2022 17:39:51 UTC] PHP Warning:  move_uploaded_file(uploads/12/logo2022.png): failed to open stream: No such file or directory in /home/erickdev/sistkd.erickdev.net/dam/sub_img/ajaximage2.php on line 42
+[28-Oct-2022 17:39:51 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpHkbkw9' to 'uploads/12/logo2022.png' in /home/erickdev/sistkd.erickdev.net/dam/sub_img/ajaximage2.php on line 42
+[04-Feb-2023 22:16:48 UTC] PHP Warning:  Use of undefined constant img - assumed 'img' (this will throw an Error in a future version of PHP) in /home/erickdev/sistkd.erickdev.net/dam/sub_img/Imagen.php on line 291
+[04-Feb-2023 22:18:07 UTC] PHP Warning:  Use of undefined constant img - assumed 'img' (this will throw an Error in a future version of PHP) in /home/erickdev/sistkd.erickdev.net/dam/sub_img/Imagen.php on line 291
+[04-Feb-2023 22:19:45 UTC] PHP Warning:  unlink(uploads/1/0.png): No such file or directory in /home/erickdev/sistkd.erickdev.net/dam/sub_img/ajaximage.php on line 51
+[04-Feb-2023 22:19:45 UTC] PHP Warning:  Use of undefined constant img - assumed 'img' (this will throw an Error in a future version of PHP) in /home/erickdev/sistkd.erickdev.net/dam/sub_img/Imagen.php on line 291
+[11-Feb-2023 22:02:34 UTC] PHP Warning:  unlink(uploads/1/0.png): No such file or directory in /home/erickdev/sistkd.erickdev.net/dam/sub_img/ajaximage.php on line 51
+[11-Feb-2023 22:02:34 UTC] PHP Warning:  Use of undefined constant img - assumed 'img' (this will throw an Error in a future version of PHP) in /home/erickdev/sistkd.erickdev.net/dam/sub_img/Imagen.php on line 291
+[11-Feb-2023 22:03:00 UTC] PHP Warning:  Use of undefined constant img - assumed 'img' (this will throw an Error in a future version of PHP) in /home/erickdev/sistkd.erickdev.net/dam/sub_img/Imagen.php on line 291
+[11-Feb-2023 22:13:18 UTC] PHP Warning:  unlink(uploads/1/0.png): No such file or directory in /home/erickdev/sistkd.erickdev.net/dam/sub_img/ajaximage.php on line 51
+[11-Feb-2023 22:13:18 UTC] PHP Warning:  Use of undefined constant img - assumed 'img' (this will throw an Error in a future version of PHP) in /home/erickdev/sistkd.erickdev.net/dam/sub_img/Imagen.php on line 291
+[11-Feb-2023 22:14:54 UTC] PHP Warning:  unlink(uploads/1/0.png): No such file or directory in /home/erickdev/sistkd.erickdev.net/dam/sub_img/ajaximage.php on line 51
+[11-Feb-2023 22:14:54 UTC] PHP Warning:  Use of undefined constant img - assumed 'img' (this will throw an Error in a future version of PHP) in /home/erickdev/sistkd.erickdev.net/dam/sub_img/Imagen.php on line 291
+[11-Feb-2023 22:15:58 UTC] PHP Warning:  unlink(uploads/1/0.png): No such file or directory in /home/erickdev/sistkd.erickdev.net/dam/sub_img/ajaximage.php on line 51
+[11-Feb-2023 22:15:58 UTC] PHP Warning:  Use of undefined constant img - assumed 'img' (this will throw an Error in a future version of PHP) in /home/erickdev/sistkd.erickdev.net/dam/sub_img/Imagen.php on line 291
+[11-Feb-2023 22:17:07 UTC] PHP Warning:  unlink(uploads/1/0.png): No such file or directory in /home/erickdev/sistkd.erickdev.net/dam/sub_img/ajaximage.php on line 51
+[11-Feb-2023 22:17:07 UTC] PHP Warning:  Use of undefined constant img - assumed 'img' (this will throw an Error in a future version of PHP) in /home/erickdev/sistkd.erickdev.net/dam/sub_img/Imagen.php on line 291
+[11-Feb-2023 23:48:47 UTC] PHP Warning:  unlink(uploads/1/0.png): No such file or directory in /home/erickdev/sistkd.erickdev.net/dam/sub_img/ajaximage.php on line 51
+[11-Feb-2023 23:48:47 UTC] PHP Warning:  Use of undefined constant img - assumed 'img' (this will throw an Error in a future version of PHP) in /home/erickdev/sistkd.erickdev.net/dam/sub_img/Imagen.php on line 291
+[11-Feb-2023 23:53:03 UTC] PHP Warning:  Use of undefined constant img - assumed 'img' (this will throw an Error in a future version of PHP) in /home/erickdev/sistkd.erickdev.net/dam/sub_img/Imagen.php on line 291
+[22-Feb-2023 23:39:15 UTC] PHP Warning:  unlink(uploads/1/0.png): No such file or directory in /home/erickdev/sistkd.erickdev.net/dam/sub_img/ajaximage.php on line 51
+[22-Feb-2023 23:39:15 UTC] PHP Warning:  Use of undefined constant img - assumed 'img' (this will throw an Error in a future version of PHP) in /home/erickdev/sistkd.erickdev.net/dam/sub_img/Imagen.php on line 291
+[22-Feb-2023 23:40:56 UTC] PHP Warning:  unlink(uploads/1/0.png): No such file or directory in /home/erickdev/sistkd.erickdev.net/dam/sub_img/ajaximage.php on line 51
+[22-Feb-2023 23:40:56 UTC] PHP Warning:  Use of undefined constant img - assumed 'img' (this will throw an Error in a future version of PHP) in /home/erickdev/sistkd.erickdev.net/dam/sub_img/Imagen.php on line 291

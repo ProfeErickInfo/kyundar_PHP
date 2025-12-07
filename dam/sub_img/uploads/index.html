@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+
+function dominio_base()
+{
+    // capturamos la url
+    url_site      = document.location.href
+
+    // La separamos por la doble barra
+    url_pos      = url_site.indexOf('//');
+
+    // por un lado tenemos la url sin protocolos
+    url_limpia   = url_site.substr(url_pos+2);
+
+    // y por otro lado el protocolo usado
+    url_prot    = url_site.substr(0,url_pos+2);
+
+    // separamos todas las posibles carpetas
+    url_split 	  = url_limpia.split('/');
+
+    // y obtenemos el dominio actual
+    url_base 	= url_prot + url_split[0];
+
+return url_base;
+}
+
+</script>
+
+<title></title>
+
+</head>
+
+<body>
+<script type="text/javascript">
+
+ window.location.href=dominio_base()+'/salida.html';
+    // mostrarlo en un alert
+   // alert(dominio_base());
+
+    // escribirlo en un documento
+    //document.writeIn('mi dominio es ' + dominio_base());
+</script>
+</body>
+</html>
