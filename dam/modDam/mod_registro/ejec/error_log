@@ -1,0 +1,24 @@
+[15-Oct-2022 17:46:42 UTC] PHP Notice:  Undefined variable: mail in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 132
+[15-Oct-2022 17:50:02 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 82
+[15-Oct-2022 17:50:02 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 87
+[15-Oct-2022 17:50:02 UTC] PHP Notice:  Undefined variable: from in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 141
+[15-Oct-2022 17:51:04 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 82
+[15-Oct-2022 17:51:04 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 87
+[16-Oct-2022 13:50:08 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 82
+[16-Oct-2022 13:50:08 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 87
+[21-Oct-2022 03:05:34 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_grado.php on line 62
+[21-Oct-2022 03:06:08 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_grado.php on line 62
+[21-Oct-2022 03:14:11 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_grado.php on line 62
+[21-Oct-2022 03:16:20 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_grado.php on line 62
+[21-Oct-2022 03:26:36 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_grado.php on line 63
+[21-Oct-2022 03:30:34 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_grado.php on line 63
+[07-Mar-2023 00:25:26 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 83
+[07-Mar-2023 00:25:26 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 88
+[07-Mar-2023 00:28:50 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 83
+[07-Mar-2023 00:28:50 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 88
+[07-Mar-2023 00:31:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 83
+[07-Mar-2023 00:31:37 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 88
+[07-Mar-2023 00:35:01 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 83
+[07-Mar-2023 00:35:01 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 88
+[07-Mar-2023 01:56:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 83
+[07-Mar-2023 01:56:23 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/erickdev/sistkd.erickdev.net/dam/modDam/mod_registro/ejec/add_pago.php on line 88

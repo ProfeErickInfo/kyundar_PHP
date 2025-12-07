@@ -1,0 +1,148 @@
+=== DEBUG SAVESOCIOS FULL - 2025-11-15 01:18:54 ===
+POST data: Array
+(
+    [idusu] => 1
+    [nomClub] => 1
+    [TipoDocumento] => 001
+    [txtDocumento] => 5454545
+    [Sexo] => 1
+    [txtNombres] => Erick
+    [txtApellidos] => Orozco
+    [txtFechaNac] => 2025-11-15
+    [LugarNac] => 1
+    [Barrio] => Ternera
+    [txtDireccion] => Ternera
+    [Tpsalud] => 1
+    [txtSalud] => Saludcoop
+    [OpSocio] => 1
+    [txtCelular] => 3165214141
+    [txtEmail] => profe.erick.florez@gmail.com
+)
+
+GET data: Array
+(
+    [idusu] => 1
+)
+
+SESSION data: Array
+(
+    [nombre_usu] => TONG GUK
+    [id_usuario] => 1
+    [img_foto] => escudo_tong_guk.png
+    [tipo_U] => 1
+    [idUxer] => 2
+    [inicio_sesion] => 1763166303
+    [ultimo_acceso] => 1763169520
+    [ip_origen] => 161.10.52.162
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [token_csrf] => 86b975ad3700ad2fb5e5053e3373b688a09137811dff6f4c644d30326a047cd5
+    [direction] => club.php
+)
+
+Referer: https://devpy.erickdev.net/dam/desk.php
+========================================
+
+Conexión exitosa
+Todos los campos requeridos están presentes
+ID usuario GET: 1
+ID usuario SESSION: 1
+ID usuario final: 1
+Iniciando sanitización de datos
+Club asignado como id_usuario: 1
+Sanitización completada exitosamente
+Cantidad de registros existentes: 0
+Iniciando inserción del nuevo socio
+SQL preparado
+Statement preparado exitosamente
+Variables antes del bind:
+txtNombres: 'ERICK'
+txtApellidos: 'OROZCO'
+TipoDocumento: '1'
+txtDocumento: '5454545'
+anoHoy: '2025'
+id_usu: '1'
+LugarNac: '1'
+sexo: '1'
+celular: '3165214141'
+nomClub: '1'
+OpSocio: '1'
+Intentando bind_param...
+ERROR: Error en bind_param: 
+=== DEBUG SAVESOCIOS FULL - 2025-11-15 01:21:21 ===
+POST data: Array
+(
+    [idusu] => 1
+    [nomClub] => 1
+    [TipoDocumento] => 001
+    [txtDocumento] => 8987987978
+    [Sexo] => 1
+    [txtNombres] => Erick
+    [txtApellidos] => Orozco
+    [txtFechaNac] => 2025-11-15
+    [LugarNac] => 1
+    [Barrio] => Ternera
+    [txtDireccion] => Ternera
+    [Tpsalud] => 1
+    [txtSalud] => Saludcoop
+    [OpSocio] => 1
+    [txtCelular] => 3165214141
+    [txtEmail] => profe.erick.florez@gmail.com
+)
+
+GET data: Array
+(
+    [idusu] => 1
+)
+
+SESSION data: Array
+(
+    [nombre_usu] => TONG GUK
+    [id_usuario] => 1
+    [img_foto] => escudo_tong_guk.png
+    [tipo_U] => 1
+    [idUxer] => 2
+    [inicio_sesion] => 1763166303
+    [ultimo_acceso] => 1763169664
+    [ip_origen] => 161.10.52.162
+    [user_agent] => Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+    [token_csrf] => 86b975ad3700ad2fb5e5053e3373b688a09137811dff6f4c644d30326a047cd5
+    [direction] => club.php
+)
+
+Referer: https://devpy.erickdev.net/dam/desk.php
+========================================
+
+Conexión exitosa
+Todos los campos requeridos están presentes
+ID usuario GET: 1
+ID usuario SESSION: 1
+ID usuario final: 1
+Iniciando sanitización de datos
+Club asignado como id_usuario: 1
+Sanitización completada exitosamente
+Cantidad de registros existentes: 0
+Iniciando inserción del nuevo socio
+SQL preparado
+Statement preparado exitosamente
+Variables antes del bind:
+txtNombres: 'ERICK'
+txtApellidos: 'OROZCO'
+TipoDocumento: '1'
+txtDocumento: '8987987978'
+anoHoy: '2025'
+id_usu: '1'
+LugarNac: '1'
+sexo: '1'
+celular: '3165214141'
+nomClub: '1'
+OpSocio: '1'
+Intentando bind_param...
+Parámetros vinculados exitosamente
+Valores a insertar:
+  Nombres: ERICK
+  Apellidos: OROZCO
+  Documento: 8987987978
+  Email: profe.erick.florez@gmail.com
+  Club: 1
+Ejecutando consulta...
+ÉXITO: Inserción exitosa, nuevo ID: 15

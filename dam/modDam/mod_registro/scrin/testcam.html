@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    
+<script src="jquery-1.9.0.min.js"></script>
+
+<script>
+    
+    
+    function getImageName() { window.JSBridge.getImageName(window.localStorage.getItem("pridphoto")); }
+    
+    
+</script>
+
+
+
+<script>
+
+ 		function readURL(input) 
+ 		{
+ 		    
+ 			if (input.files && input.files[0]) 
+ 			{
+ 		    	var reader = new FileReader();
+
+ 			    reader.onload = function (e) 
+ 			    {
+ 
+ 			      
+ 			       $('#ImagePreview').prop('src',e.target.result);
+ 			      
+ 			        
+ 
+ 			    }
+
+ 				   reader.readAsDataURL(input.files[0]);
+ 			}
+ 			
+  
+              
+ 		}
+</script>
+
+<script>
+    
+    function loadimage()
+    {
+        alert("hi");
+        var x=document.getElementById("filepath").value;
+        alert(x);
+        $('#ImagePreview').prop('src',x);
+        
+        
+    }
+    
+    
+</script>
+
+<script>
+    
+    function postImage(imagePath)
+    {
+        var x =imagePath;
+       
+        alert("msg from testcam.html : Image Path passed to webview ="+x);
+       // document.getElementById("ImagePreview").innerHTML="<img src=\\"+ imagePath + "\>";
+        $('#ImagePreview').prop('src',x);
+
+        
+        
+    }
+    
+    
+</script>
+
+
+
+<script>
+ 	function uploadphoto() 
+	{
+          alert("upload reached");
+	      imageForm.submit();
+        }
+</script>
+
+
+
+
+
+
+</head>
+<body>
+   	<table>
+
+    	  	    <tr align=center>
+    	  	        
+    	  	         <td><img id="ImagePreview" name="ImagePreview" src="test.jpg" width=150 height=170 />
+    	  	         <br>
+    	  	         <input type=text id="filepath" name="filepath">
+    	  	         <input type=button id="ShowPreview" name="ShowPreview" value="ShowPreview" onclick="loadimage();"/></td>
+ 
+         	    </tr>
+         	    
+         	    <tr>
+         	      <td>      
+			  	    <form id="imageForm" name="imageForm" enctype="multipart/form-data" action="http://45.127.56.149:8050/CapturePhoto/uploadFile.jsp" method="POST" target="testcam.html"> 
+				
+                     <input name="imageToUpload" id="imageToUpload" type="file" accept="image/* capture=camera"  onchange="readURL(this);"  />
+
+
+			    	<input type="button" value="Upload Photo" onclick="uploadphoto();" />
+        	     		
+                  </form> 
+				
+        	     </td>
+             
+            	</tr>
+         </table>
+ </body>
+</html>
